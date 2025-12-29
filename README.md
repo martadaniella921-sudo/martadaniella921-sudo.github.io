@@ -1,107 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dani | Aprende conmigo desde cero</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aprende con Dani</title>
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
-      background-color: #ffffff;
-      color: #333333;
+      font-family: 'Inter', sans-serif;
+      background-color: #f7f7f7;
+      color: #1f2937;
       line-height: 1.6;
     }
 
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
-
-    header h1 {
-      font-size: 36px;
-      margin-bottom: 15px;
-    }
-
-    header p {
-      font-size: 18px;
-      max-width: 700px;
-      margin: 0 auto 30px;
-    }
-
-    .btn {
-      background-color: #2FA97A;
-      color: white;
-      padding: 14px 28px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: 600;
-    }
-
-    section {
-      padding: 70px 20px;
+    .container {
       max-width: 1100px;
       margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 60px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #374151;
+    }
+
+    .hero {
+      background: white;
+      border-radius: 16px;
+      padding: 60px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .hero a {
+      display: inline-block;
+      margin-top: 30px;
+      background: #16a34a;
+      color: white;
+      padding: 14px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     .about {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 40px;
-      align-items: center;
+      margin-top: 80px;
     }
 
     .about img {
       width: 100%;
-      border-radius: 10px;
-    }
-
-    .about h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
+      border-radius: 16px;
+      object-fit: cover;
     }
 
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
+      gap: 30px;
+      margin-top: 40px;
     }
 
     .card {
-      border: 1px solid #eaeaea;
-      border-radius: 10px;
-      padding: 25px;
-      background-color: #ffffff;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.04);
     }
 
     .card h3 {
       margin-top: 0;
-      font-size: 20px;
-    }
-
-    .card p {
-      font-size: 15px;
-      margin-bottom: 15px;
+      font-size: 18px;
     }
 
     .card a {
-      color: #2FA97A;
+      color: #16a34a;
       font-weight: 600;
       text-decoration: none;
     }
 
-    .resources {
-      background-color: #f9f9f9;
+    .cta {
+      margin-top: 100px;
+      background: #ecfdf5;
+      padding: 50px;
+      border-radius: 20px;
+      text-align: center;
     }
 
     footer {
-      background-color: #f5f5f5;
-      padding: 40px 20px;
       text-align: center;
+      padding: 40px;
       font-size: 14px;
-      color: #777;
+      color: #6b7280;
     }
 
     @media (max-width: 768px) {
@@ -114,137 +122,82 @@
 
 <body>
 
-<!-- HERO -->
-<header>
-  <h1>Aprende a generar ingresos online con orden</h1>
-  <p>
-    Guías gratuitas, procesos reales y caminos claros para empezar en 2026
-    sin repetir errores ni caer en promesas vacías.
-  </p>
-  <a href="#guias" class="btn">Empieza aquí</a>
-</header>
+  <div class="container">
 
-<!-- QUIÉN SOY -->
-<section class="about">
-  <div>
-    <h2>Soy Dani</h2>
-    <p>
-      Invertí buscando resultados rápidos y me equivoqué.
-      Me saturé de cursos, información desordenada y falsas expectativas.
-    </p>
-    <p>
-      Hoy organizo procesos reales para que otras personas no repitan esos errores.
-      Aquí comparto lo que sí funciona, con claridad y sin presión.
-    </p>
-  </div>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Aprende a generar ingresos online con orden</h1>
+      <p>Guías gratuitas, procesos reales y caminos claros para empezar en 2026 sin repetir errores ni caer en promesas vacías.</p>
+      <a href="#guias">Empieza aquí</a>
+    </section>
 
-  <div>
-    <!-- Aquí va tu imagen -->
-    <img src="TU-FOTO-AQUI.jpg" alt="Dani">
-  </div>
-</section>
+    <!-- SOBRE MI -->
+    <section class="about">
+      <div>
+        <h2>Soy Dani</h2>
+        <p>
+          Invertí buscando resultados rápidos y me equivoqué.
+          Me saturé de cursos, información desordenada y falsas expectativas.
+        </p>
+        <p>
+          Hoy organizo procesos reales para que otras personas no repitan esos errores.
+          Aquí comparto lo que sí funciona, con claridad y sin presión.
+        </p>
+      </div>
+      <div>
+        <!-- AQUÍ LUEGO PONEMOS TU FOTO -->
+        <img src="https://via.placeholder.com/500x600" alt="Dani">
+      </div>
+    </section>
 
-<!-- PARA QUIÉN -->
-<section>
-  <h2>¿Para quién es esta página?</h2>
-  <ul>
-    <li>Personas que ya invirtieron y no vieron resultados</li>
-    <li>Personas confundidas por demasiada información</li>
-    <li>Quienes quieren empezar sin gastar más dinero</li>
-    <li>Quienes buscan procesos reales y ordenados</li>
-  </ul>
-</section>
+    <!-- PARA QUIÉN -->
+    <section>
+      <h2>¿Para quién es esta página?</h2>
+      <ul>
+        <li>Personas que ya invirtieron y no vieron resultados</li>
+        <li>Personas confundidas por demasiada información</li>
+        <li>Quienes quieren empezar sin gastar más dinero</li>
+        <li>Quienes buscan procesos reales y ordenados</li>
+      </ul>
+    </section>
 
-<!-- GUÍAS -->
-<section id="guias">
-  <h2>Guías gratuitas – empieza con orden</h2>
+    <!-- GUÍAS -->
+    <section id="guias">
+      <h2>Guías gratuitas – empieza con orden</h2>
 
-  <div class="cards">
+      <div class="cards">
+        <div class="card">
+          <h3>1️⃣ Marca personal (antes de invertir)</h3>
+          <p>Qué definir antes de gastar dinero o entrar a una academia.</p>
+          <a href="#">Ver guía →</a>
+        </div>
 
-    <div class="card">
-      <h3>1️⃣ Marca personal (antes de invertir)</h3>
-      <p>Qué debes definir antes de gastar dinero o entrar a una academia.</p>
-      <a href="#">Ver guía</a>
-    </div>
+        <div class="card">
+          <h3>2️⃣ Dónde está el dinero online en 2026</h3>
+          <p>Opciones reales, sin humo ni promesas irreales.</p>
+          <a href="#">Ver guía →</a>
+        </div>
 
-    <div class="card">
-      <h3>2️⃣ Dónde está el dinero online en 2026</h3>
-      <p>Modelos reales que funcionan hoy y cuáles ya no.</p>
-      <a href="#">Ver guía</a>
-    </div>
+        <div class="card">
+          <h3>3️⃣ Afiliaciones (Amazon, Target, Walmart)</h3>
+          <p>Cómo empezar sin producto ni inversión.</p>
+          <a href="#">Ver guía →</a>
+        </div>
+      </div>
+    </section>
 
-    <div class="card">
-      <h3>3️⃣ Afiliaciones reales</h3>
-      <p>Amazon, Target, Walmart y más para empezar sin producto propio.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>4️⃣ Acorns – referidos paso a paso</h3>
-      <p>Cómo generar bonos invitando personas.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>5️⃣ Contenido orgánico que monetiza</h3>
-      <p>Qué publicar y por qué funciona.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>6️⃣ TikTok Shop desde cero</h3>
-      <p>Cómo empezar sin inventarios.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>7️⃣ Producto digital simple</h3>
-      <p>Guías, PDFs y recursos reales.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>8️⃣ Servicios digitales simples</h3>
-      <p>Qué ofrecer aunque no seas experta.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>9️⃣ Colaboraciones con marcas</h3>
-      <p>UGC + TikTok Shop + marcas reales.</p>
-      <a href="#">Ver guía</a>
-    </div>
-
-    <div class="card">
-      <h3>🔟 Plan real de 30 días</h3>
-      <p>Orden paso a paso para tu primera venta.</p>
-      <a href="#">Ver guía</a>
-    </div>
+    <!-- CTA SUAVE -->
+    <section class="cta">
+      <h2>¿Quieres acompañamiento?</h2>
+      <p>Si en algún momento quieres trabajar conmigo de forma más personalizada, aquí te explico cómo.</p>
+      <a href="#" style="color:#16a34a;font-weight:600;">Ver opciones →</a>
+    </section>
 
   </div>
-</section>
 
-<!-- RECURSOS -->
-<section class="resources">
-  <h2>Recursos recomendados</h2>
-  <p>
-    Herramientas que uso y recomiendo.
-    Algunos enlaces pueden generar comisión sin costo extra para ti.
-  </p>
-  <ul>
-    <li>Systeme.io – páginas gratuitas</li>
-    <li>Amazon Afiliados</li>
-    <li>Acorns</li>
-    <li>Canva</li>
-    <li>TikTok Shop</li>
-  </ul>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  © 2026 · Dani · Educación digital · Marca personal · Afiliación
-</footer>
+  <footer>
+    © 2026 · Aprende con Dani · Procesos reales, sin humo
+  </footer>
 
 </body>
 </html>
-
